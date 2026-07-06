@@ -2,7 +2,6 @@ const chatInput = document.getElementById('chat-input');
 const chatMessages = document.getElementById('chat-messages');
 
 chatInput.addEventListener('keydown', function(event) {
-    
     if (event.key === 'Enter') {
         event.preventDefault();
         const newMessage = document.createElement('li');
@@ -67,12 +66,8 @@ saveBtn.addEventListener('click', function() {
 
 
 const delegationList = document.getElementById('delegation-list');
-
-
 delegationList.addEventListener('click', function(event) {
-    
     if (event.target.tagName === 'LI') {
-        
         event.target.classList.toggle('completed');
     }
 });
